@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ColumnAndRow</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title">Title-name</string>
+    <string name="row_column_button_title">Row and Column</string>
+    <string name="image_button_title">Image card</string>
+    <string name="title_activity_image_card">ImageCard</string>
+    <string name="image_title">Android Developer</string>
+</resources>
