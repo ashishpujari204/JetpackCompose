@@ -6,4 +6,6 @@
     <string name="image_button_title">Image card</string>
     <string name="title_activity_image_card">ImageCard</string>
     <string name="image_title">Android Developer</string>
+    <string name="button_textview">TextView Mock</string>
+    <string name="title_activity_state_demo">StateDemo</string>
 </resources>

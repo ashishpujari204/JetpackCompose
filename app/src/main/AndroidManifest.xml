@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ColumnAndRow">
         <activity
+            android:name=".StateDemo"
+            android:exported="true"
+            android:label="@string/title_activity_state_demo"
+            android:theme="@style/Theme.ColumnAndRow.NoActionBar" />
+        <activity
+            android:name=".TextViewCompose"
+            android:exported="true"
+            android:label="@string/button_textview"
+            android:theme="@style/Theme.ColumnAndRow.NoActionBar" />
+        <activity
             android:name=".ImageCard"
             android:exported="true"
             android:label="@string/title_activity_image_card"

@@ -48,6 +48,20 @@ class HomeActivity : ComponentActivity() {
                         }
                     )
                     Spacer(modifier = Modifier.size(10.dp))
+                    CustomButton(
+                        buttonTitle = resources.getString(R.string.button_textview),
+                        onClick = {
+                            context.startActivity(Intent(context, TextViewCompose::class.java))
+                        }
+                    )
+                    Spacer(modifier = Modifier.size(10.dp))
+                    CustomButton(
+                        buttonTitle = resources.getString(R.string.title_activity_state_demo),
+                        onClick = {
+                            context.startActivity(Intent(context, StateDemo::class.java))
+                        }
+                    )
+                    Spacer(modifier = Modifier.size(10.dp))
                 }
             }
         }
