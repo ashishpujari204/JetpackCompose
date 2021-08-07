@@ -44,6 +44,9 @@ class TextViewCompose : ComponentActivity() {
             var textFieldState by remember {
                 mutableStateOf("")
             }
+            var sureNameTextFieldState by remember {
+                mutableStateOf("")
+            }
             val scope = rememberCoroutineScope()
             ColumnAndRowTheme {
                 Box(
@@ -52,35 +55,35 @@ class TextViewCompose : ComponentActivity() {
                         .background(Color.Black)
 
                 ) {
-                   /* Text(
-                        text = buildAnnotatedString {
-                            withStyle(
-                                style = SpanStyle(
-                                    color = Color.Red,
-                                    fontSize = 40.sp
-                                )
-                            ) {
-                                append("A")
-                            }
-                            append("shish")
-                            withStyle(
-                                style = SpanStyle(
-                                    color = Color.Red,
-                                    fontSize = 40.sp
-                                )
-                            ) {
-                                append(" P")
-                            }
-                            append("ujari")
+                    /* Text(
+                         text = buildAnnotatedString {
+                             withStyle(
+                                 style = SpanStyle(
+                                     color = Color.Red,
+                                     fontSize = 40.sp
+                                 )
+                             ) {
+                                 append("A")
+                             }
+                             append("shish")
+                             withStyle(
+                                 style = SpanStyle(
+                                     color = Color.Red,
+                                     fontSize = 40.sp
+                                 )
+                             ) {
+                                 append(" P")
+                             }
+                             append("ujari")
 
-                        },
-                        fontSize = 24.sp,
-                        color = Color.White,
-                        fontFamily = fontFamily,
-                        fontStyle = FontStyle.Italic,
-                        textAlign = TextAlign.Center,
-                        textDecoration = TextDecoration.Underline
-                    )*/
+                         },
+                         fontSize = 24.sp,
+                         color = Color.White,
+                         fontFamily = fontFamily,
+                         fontStyle = FontStyle.Italic,
+                         textAlign = TextAlign.Center,
+                         textDecoration = TextDecoration.Underline
+                     )*/
                 }
 
                 Scaffold(
@@ -97,10 +100,21 @@ class TextViewCompose : ComponentActivity() {
                         OutlinedTextField(
                             value = textFieldState,
                             label = {
-                                Text(text = "Enter your name")
+                                Text(text = "Enter First name")
                             },
                             onValueChange = {
                                 textFieldState = it
+                            },
+                            singleLine = true,
+                            modifier = Modifier.fillMaxWidth()
+                        )
+                        Spacer(modifier = Modifier.size(20.dp))
+                        OutlinedTextField(
+                            value = sureNameTextFieldState, onValueChange = {
+                                sureNameTextFieldState = it
+                            },
+                            label = {
+                                Text(text = "Enter last name")
                             },
                             singleLine = true,
                             modifier = Modifier.fillMaxWidth()

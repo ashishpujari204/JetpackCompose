@@ -62,6 +62,13 @@ class HomeActivity : ComponentActivity() {
                         }
                     )
                     Spacer(modifier = Modifier.size(10.dp))
+                    CustomButton(
+                        buttonTitle = resources.getString(R.string.list_button_title),
+                        onClick = {
+                            context.startActivity(Intent(context, List::class.java))
+                        }
+                    )
+                    Spacer(modifier = Modifier.size(10.dp))
                 }
             }
         }
@@ -78,7 +85,7 @@ fun CustomButton(
         enabled = true,
         border = BorderStroke(width = 4.dp, color = Color.White),
         shape = MaterialTheme.shapes.medium,
-        colors= ButtonDefaults.buttonColors(backgroundColor = Color.White)
+        colors = ButtonDefaults.buttonColors(backgroundColor = Color.White)
     ) {
         Text(text = buttonTitle)
     }

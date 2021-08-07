@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ColumnAndRow">
         <activity
+            android:name=".List"
+            android:exported="true"
+            android:label="@string/title_activity_list"
+            android:theme="@style/Theme.ColumnAndRow.NoActionBar" />
+        <activity
             android:name=".StateDemo"
             android:exported="true"
             android:label="@string/title_activity_state_demo"
