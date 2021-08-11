@@ -58,8 +58,6 @@ class List : ComponentActivity() {
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold
                     )
-
-
                 }
             }
 

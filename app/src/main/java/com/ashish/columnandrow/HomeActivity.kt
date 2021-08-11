@@ -69,6 +69,25 @@ class HomeActivity : ComponentActivity() {
                         }
                     )
                     Spacer(modifier = Modifier.size(10.dp))
+                    CustomButton(
+                        buttonTitle = resources.getString(R.string.constraint_layout_button),
+                        onClick = {
+                            context.startActivity(
+                                Intent(
+                                    context,
+                                    ConstraintLayoutCompose::class.java
+                                )
+                            )
+                        }
+                    )
+                    Spacer(modifier = Modifier.size(10.dp))
+                    CustomButton(
+                        buttonTitle = resources.getString(R.string.circular_progress_bar_button),
+                        onClick = {
+                            context.startActivity(Intent(context, CircularProgressBar::class.java))
+                        }
+                    )
+                    Spacer(modifier = Modifier.size(10.dp))
                 }
             }
         }

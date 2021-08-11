@@ -10,4 +10,8 @@
     <string name="button_textview">TextField</string>
     <string name="title_activity_state_demo">StateDemo</string>
     <string name="title_activity_list">List</string>
+    <string name="constraint_layout_button">Constraint Layout</string>
+    <string name="title_activity_constraint_layout_compose">ConstraintLayoutCompose</string>
+    <string name="title_activity_circular_progress_bar">CircularProgressBar</string>
+    <string name="circular_progress_bar_button">Circular ProgressBar</string>
 </resources>

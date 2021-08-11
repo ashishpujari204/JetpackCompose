@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ColumnAndRow">
         <activity
+            android:name=".CircularProgressBar"
+            android:exported="true"
+            android:label="@string/title_activity_circular_progress_bar"
+            android:theme="@style/Theme.ColumnAndRow.NoActionBar" />
+        <activity
+            android:name=".ConstraintLayoutCompose"
+            android:exported="true"
+            android:label="@string/title_activity_constraint_layout_compose"
+            android:theme="@style/Theme.ColumnAndRow.NoActionBar" />
+        <activity
             android:name=".List"
             android:exported="true"
             android:label="@string/title_activity_list"
