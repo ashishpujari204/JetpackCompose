@@ -1,14 +1,17 @@
 package com.ashish.columnandrow
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.layoutId
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ChainStyle
 import androidx.constraintlayout.compose.ConstraintLayout
@@ -43,12 +46,18 @@ class ConstraintLayoutCompose : ComponentActivity() {
                 createHorizontalChain(greenBox, redBox, chainStyle = ChainStyle.Spread)
             }
             ConstraintLayout(constraintSet = constraints, modifier = Modifier.fillMaxSize()) {
+                val context = LocalContext.current
                 Box(modifier = Modifier
                     .background(Color.Green)
-                    .layoutId("greenBox"))
-                Box(modifier = Modifier
-                    .background(Color.Red)
-                    .layoutId("redBox"))
+                    .layoutId("greenBox")
+                    .clickable {
+                        context.startActivity(Intent(context, NetConstraintLayout::class.java))
+                    })
+                Box(
+                    modifier = Modifier
+                        .background(Color.Red)
+                        .layoutId("redBox")
+                )
             }
         }
     }

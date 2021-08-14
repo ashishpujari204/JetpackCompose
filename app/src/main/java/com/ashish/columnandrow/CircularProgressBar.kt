@@ -7,8 +7,10 @@ import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
+import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -36,6 +38,8 @@ class CircularProgressBar : ComponentActivity() {
                 modifier = Modifier.fillMaxSize()
             ) {
                 CircularProgressBar(percentage = 1f, number = 100)
+                Spacer(modifier = Modifier.size(20.dp))
+                CircularProgressIndicator(color = Color.Green)
             }
         }
     }
