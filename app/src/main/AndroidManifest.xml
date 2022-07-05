@@ -15,6 +15,11 @@
             android:label="@string/title_activity_net_constrinat_layout"
             android:theme="@style/Theme.ColumnAndRow.NoActionBar" />
         <activity
+            android:name=".CustomCheckBox"
+            android:exported="true"
+            android:label="@string/checkbox"
+            android:theme="@style/Theme.ColumnAndRow.NoActionBar" />
+        <activity
             android:name=".CircularProgressBar"
             android:exported="true"
             android:label="@string/title_activity_circular_progress_bar"

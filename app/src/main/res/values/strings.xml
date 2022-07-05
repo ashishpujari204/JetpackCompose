@@ -14,5 +14,6 @@
     <string name="title_activity_constraint_layout_compose">ConstraintLayoutCompose</string>
     <string name="title_activity_circular_progress_bar">CircularProgressBar</string>
     <string name="circular_progress_bar_button">Circular ProgressBar</string>
+    <string name="checkbox">CheckBox</string>
     <string name="title_activity_net_constrinat_layout">NetConstrinatLayout</string>
 </resources>

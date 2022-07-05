@@ -88,6 +88,13 @@ class HomeActivity : ComponentActivity() {
                         }
                     )
                     Spacer(modifier = Modifier.size(10.dp))
+                    CustomButton(
+                        buttonTitle = resources.getString(R.string.checkbox),
+                        onClick = {
+                            context.startActivity(Intent(context, CustomCheckBox::class.java))
+                        }
+                    )
+                    Spacer(modifier = Modifier.size(10.dp))
                 }
             }
         }
